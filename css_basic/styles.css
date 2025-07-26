@@ -1,0 +1,24 @@
+/* 1. Make <body> a vertical flex container */
+body {
+  display: flex;             /* Enables flexbox */
+  flex-direction: column;    /* Vertical layout: header -> main -> footer */
+  min-height: 100vh;         /* Full height */
+}
+
+/* 2. Make <main> a horizontal flex container */
+main {
+  display: flex;             /* Enables flexbox for article & aside */
+  flex-direction: row;       /* Horizontal layout */
+  flex: auto;                /* Allow <main> to grow */
+}
+
+/* 3. Width ratio for article & aside */
+article {
+  flex: 2;                   /* Takes 2/3 width */
+  overflow-y: auto;          /* Scroll if content overflows */
+}
+
+aside {
+  flex: 1;                   /* Takes 1/3 width */
+  overflow-y: auto;          /* Scroll if content overflows */
+}

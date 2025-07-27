@@ -140,16 +140,19 @@
     align-items: center;      /* vertically center text with image */
     gap: 20px;                /* space between image and text */
     padding: 20px;
+    background-color: rgba(166, 19, 211, 0.959);
+    justify-content: center;
 }
 
 .testimonial .image img {
     width: 250px;             /* control image size */
     height: auto;
-    display: block;
+    align-items: center;
 }
 
 .testimonial .text {
     max-width: 500px;         /* control width of text */
+    text-align: center;
 }
 
 .testimonial blockquote {

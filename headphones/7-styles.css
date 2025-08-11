@@ -1,0 +1,135 @@
+.contact-us {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+button {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+footer {
+  background-color: #222;
+  color: #eee;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+footer nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+footer nav ul li a {
+  color: #eee;
+  transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover,
+footer nav ul li a:active {
+  color: var(--primary-color);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+.pentagon {
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+  clip-path: polygon(50% 0%, 90% 35%, 75% 90%, 25% 90%, 10% 35%);
+  margin: 0 auto 1rem auto;
+}
+.service, .result-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.service:hover, .result-item:hover {
+  transform: scale(1.05) rotate(3deg);
+  opacity: 0.9;
+}
+
+.service, .result-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.service:hover, .result-item:hover {
+  transform: scale(1.05) rotate(3deg);
+  opacity: 0.9;
+}
